@@ -1,1 +1,149 @@
+* {
+    box-sizing: border-box;
+}
 
+#nav {
+    height: auto;
+    display: flex;
+    background-color: royalblue;
+    color: white;
+    align-items: center;
+}
+
+#nav > div {
+    display: flex;
+}
+
+#acme {
+    font-weight: bold;
+    font-size: 200%;
+    flex: 1;
+    padding: 1rem;
+}
+
+#links {
+    justify-content: space-around;
+    font-size: 100%;
+    flex: 3;
+}
+
+#usersheader {
+    font-size: 175%;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+#innerform {
+    width: 50%;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#createheader {
+    font-size: 175%;
+    font-weight: bold;
+}
+
+.question {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.label {
+    flex: 1;
+}
+
+.response {
+    flex: 4;
+    width: 100px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#save {
+    background-color: royalblue;
+    color: white;
+
+}
+
+#cards {
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: calc(100%/3 - 2rem);
+    height: auto;
+    margin: 1rem;
+}
+
+.cardtop {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+.cardtext {
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #acme {
+        flex: 0;
+    }
+
+    #links {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #links > div {
+        padding: 1rem;
+    }
+
+    #innerform {
+        width: 90%;
+        height: 300px;
+    }
+
+    .question {
+        flex-direction: column;
+    }
+
+    #buttons {
+        flex-direction: column;
+    }
+
+    #cards {
+        justify-content: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
